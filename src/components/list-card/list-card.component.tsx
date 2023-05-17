@@ -1,10 +1,15 @@
-import pizzaList from "@/mocks/pizza.json";
 import { Card } from "../card/card.components";
+import { Pizza } from "@/helpers/types/pizza";
+import { FC } from "react";
 
-export const ListCard = () => {
+interface ListCardProps {
+  items: Pizza[];
+}
+
+export const ListCard: FC<ListCardProps> = ({ items }) => {
   return (
     <div className="grid grid-cols-3 gap-2.5 mt-8 max-w-screen-xl mx-auto px-6">
-      {pizzaList.map((pizza) => (
+      {items.map((pizza) => (
         <Card {...pizza} key={pizza.id} />
       ))}
     </div>

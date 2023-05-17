@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { ListCard } from "./list-card.component";
+import pizzaList from "@/mocks/pizza.json";
 
 export default {
   title: "Component/ListCard",
@@ -10,5 +10,7 @@ export default {
 type Story = StoryObj<typeof ListCard>;
 
 export const FirstStory: Story = {
-  args: {},
+  args: {
+    items: pizzaList,
+  },
 };
