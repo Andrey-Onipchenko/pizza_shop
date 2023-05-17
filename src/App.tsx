@@ -1,6 +1,11 @@
+import { Header } from "@/components/header/header.component.tsx";
+import { ListCard } from "@/components/list-card/list-card.component";
 export const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-red-500">Pizza shop</h1>
+    <>
+      <Header />
+      <ListCard />
+    </>
   );
 };
 
