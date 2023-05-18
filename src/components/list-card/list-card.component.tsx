@@ -8,7 +8,7 @@ interface ListCardProps {
 
 export const ListCard: FC<ListCardProps> = ({ items }) => {
   return (
-    <div className="grid grid-cols-3 gap-2.5 mt-8 max-w-screen-xl mx-auto px-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 px-6">
       {items.map((pizza) => (
         <Card {...pizza} key={pizza.id} />
       ))}

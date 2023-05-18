@@ -16,7 +16,7 @@ export const Card: FC<CardProps> = ({
   price,
 }) => {
   return (
-    <div className="max-w-sm shadow-xl rounded-2xl relative">
+    <div className="max-w-sm shadow-xl rounded-2xl relative mx-auto ">
       <img
         className="w-full h-60 object-cover object-center rounded-t-2xl "
         src={useImage(`assets/images/${path}`)}
